@@ -45,7 +45,7 @@ export default function RootLayout({
                         <div className="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
                             <ul className="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
                                 <li>
-                                    <a className="nav-link page-scroll active" href="#header">Home <span className="sr-only">(current)</span></a>
+                                    <a className="nav-link page-scroll active" href="/">Home <span className="sr-only">(current)</span></a>
                                 </li>
                                 <li>
                                     <a className="nav-link page-scroll" href="#features">Features</a>
