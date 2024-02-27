@@ -29,14 +29,12 @@ export default function ArticlePage() {
       <div className='ex-basic-1 pt-4'>
         <div className='container px-4 sm:px-8 xl:px-32'>
           <p className='mb-4'>
-            {' '}
             Are you looking for ways to grow the user base for your mobile application? Then you have arrived
             at the right place. Here you will find a curated collection of landing page HTML templates that
             will help you build an engaging online presentation for your mobile app and convince visitors to
             become loyal paying users.
           </p>
           <p className='mb-12'>
-            {' '}
             All templates in the roundup are premium which means you need to pay for them but we're talking
             small amounts of money which won't break your bank account but will help authors make a living. In
             return you get a high quality, updated item together with high quality and very prompt technical
@@ -136,7 +134,6 @@ export default function ArticlePage() {
       <div className='ex-basic-1 pt-6 pb-12'>
         <div className='container px-4 sm:px-8 xl:px-32'>
           <p className='mb-12'>
-            {' '}
             Features include an eye catching morphtext in the header, details lightbox for more details
             information, statistics numbers for important values, card slider for testimonials, image slider
             for customer logos and working forms that will enable your landing page to provide leads in order
@@ -146,14 +143,12 @@ export default function ArticlePage() {
           <h2 className='mb-6'>New elements added to the package</h2>
           <img className='inline mb-12' src='images/article-details-small.jpg' alt='alternative' />
           <p className='mb-4'>
-            {' '}
             Some useful extra pages are bundled with the template lik article details, terms conditions and
             privacy policy which can be customized as per your requirements. Riga has an impactful dark style
             design combined with warm colors and angular background shapes with the unique goal of making your
-            mobile app stand out.{' '}
+            mobile app stand out.
           </p>
           <p className='mb-12'>
-            {' '}
             Leon is an easy to customize landing page HTML template built with Tailwind CSS for promoting
             mobile apps to the online audience and making visitors download them from app stores. This
             template is built with HTML and Tailwind CSS to ensure the highest flexibility for all users.
@@ -161,7 +156,6 @@ export default function ArticlePage() {
           <div className='text-box mb-12'>
             <h3 className='mb-2'>Visitors love a beautiful and efficient website</h3>
             <p className='mb-4'>
-              {' '}
               All designers, developers and tech-savvy people will be able to customize this template with
               basic web coding skills. Among the features you will find details lightbox for more details
               information, tabbed content for feature details, video lightbox, card slider for testimonials,
@@ -171,7 +165,6 @@ export default function ArticlePage() {
           </div>
           {/* <!-- end of text-box --> */}
           <p className='mb-6'>
-            {' '}
             Together with touches of call to action green, the overall landing page design will showcase your
             app beautifully and will help with convincing visitors to download it from the app stores. Orange
             and gray hues with one color backgrounds to maximize the impact of your content image slider for

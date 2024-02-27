@@ -19,7 +19,6 @@ export default function PrivacyPage() {
         <div className='container mx-auto px-4 sm:px-8 xl:max-w-5xl xl:px-12'>
           <h2 className='mt-12 mb-4'>1. Private data we receive and collect</h2>
           <p className='mb-12'>
-            {' '}
             Leon also automatically collects and receives certain information from your computer or mobile
             device, including the activities you perform on our Website, the Platforms, and the Applications,
             the type of hardware and software you are using (for example, your operating system or browser),

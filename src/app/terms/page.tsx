@@ -19,7 +19,6 @@ export default function TermsPage() {
         <div className='container mx-auto px-4 sm:px-8 xl:max-w-5xl xl:px-12'>
           <div className='text-box my-12'>
             <p className='p-large mb-4'>
-              {' '}
               The app also automatically collects and receives certain information from your computer or
               mobile device, including the activities you perform on our Website, the Platforms, and the
               Applications, the type of hardware and software you are using (for example, your operating
