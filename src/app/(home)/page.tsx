@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <>
+      <div id='home' />
       {/* <!-- Header --> */}
       <header id='header' className='header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32'>
         <div className='container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8'>
@@ -11,12 +14,12 @@ export default function Home() {
               Start getting things done together with your team based on Pavo&apos;s revolutionary team
               management features
             </p>
-            <a className='btn-solid-lg' href='#your-link'>
+            <Link className='btn-solid-lg' href='#your-link'>
               <i className='fab fa-apple'></i>Download
-            </a>
-            <a className='btn-solid-lg secondary' href='#your-link'>
+            </Link>
+            <Link className='btn-solid-lg secondary' href='#your-link'>
               <i className='fab fa-google-play'></i>Download
-            </a>
+            </Link>
           </div>
           <div className='xl:text-right'>
             <img className='inline' src='/images/header-smartphone.png' alt='alternative' />
@@ -185,12 +188,12 @@ export default function Home() {
                   <div>Ready out-of-the-box with minor setup settings</div>
                 </li>
               </ul>
-              <a className='btn-solid-reg popup-with-move-anim mr-1.5' href='#details-lightbox'>
+              <Link className='btn-solid-reg popup-with-move-anim mr-1.5' href='#details-lightbox'>
                 Lightbox
-              </a>
-              <a className='btn-outline-reg' href='article.html'>
+              </Link>
+              <Link className='btn-outline-reg' href='/article'>
                 Details
-              </a>
+              </Link>
             </div>
           </div>
           {/* <!-- end of col --> */}
@@ -246,9 +249,9 @@ export default function Home() {
                 <div>Onboarding steps interface</div>
               </li>
             </ul>
-            <a className='btn-solid-reg mfp-close page-scroll' href='#download'>
+            <Link className='btn-solid-reg mfp-close page-scroll' href='#download'>
               Download
-            </a>
+            </Link>
             <button className='btn-outline-reg mfp-close as-button' type='button'>
               Back
             </button>
@@ -493,9 +496,9 @@ export default function Home() {
                 </li>
               </ul>
               <div className='button-wrapper'>
-                <a className='btn-solid-reg page-scroll' href='#download'>
+                <Link className='btn-solid-reg page-scroll' href='#download'>
                   Download
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -531,9 +534,9 @@ export default function Home() {
                 </li>
               </ul>
               <div className='button-wrapper'>
-                <a className='btn-solid-reg page-scroll' href='#download'>
+                <Link className='btn-solid-reg page-scroll' href='#download'>
                   Download
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -569,9 +572,9 @@ export default function Home() {
                 </li>
               </ul>
               <div className='button-wrapper'>
-                <a className='btn-solid-reg page-scroll' href='#download'>
+                <Link className='btn-solid-reg page-scroll' href='#download'>
                   Download
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -593,12 +596,12 @@ export default function Home() {
             <p className='mb-9 text-gray-800 text-3xl leading-10'>
               Team management mobile applications don’t get much better than Pavo. Download it today
             </p>
-            <a className='btn-solid-lg' href='#your-link'>
+            <Link className='btn-solid-lg' href='#your-link'>
               <i className='fab fa-apple'></i>Download
-            </a>
-            <a className='btn-solid-lg secondary' href='#your-link'>
+            </Link>
+            <Link className='btn-solid-lg secondary' href='#your-link'>
               <i className='fab fa-google-play'></i>Download
-            </a>
+            </Link>
           </div>
         </div>
         {/* <!-- end of container --> */}
