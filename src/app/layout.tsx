@@ -13,7 +13,7 @@ import '../../public/css/magnific-popup.css';
 import '../../public/css/swiper.css';
 import '../../public/css/styles.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const font = Inter({ subsets: ['vietnamese'] });
 
 export const metadata: Metadata = {
   title: 'VanSon - Machine',
@@ -34,7 +34,7 @@ export default function RootLayout({
       <Script src='/js/swiper.min.js' defer />
       <Script src='/js/scripts.js' defer />
 
-      <body className={inter.className} data-spy='scroll' data-target='.fixed-top'>
+      <body className={font.className} data-spy='scroll' data-target='.fixed-top'>
         <Navigation />
         {children}
         <Footer />

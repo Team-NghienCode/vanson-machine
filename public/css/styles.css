@@ -377,6 +377,7 @@ input[type='checkbox'] {
 .ui-tooltip {
   padding: 7px 10px;
   color: white;
+  border-radius: 5px;
   font: 15px 'Helvetica Neue', Sans-Serif;
 }
 .arrow {
