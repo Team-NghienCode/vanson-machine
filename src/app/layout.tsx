@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import Link from 'next/link';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
@@ -8,10 +7,11 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 // import .css from public folder
-import '../../public/css/styles.css';
+import '../../public/css/jquery-ui.css';
 import '../../public/css/fontawesome-all.css';
 import '../../public/css/magnific-popup.css';
 import '../../public/css/swiper.css';
+import '../../public/css/styles.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <Script src='/js/jquery.min.js' defer />
+      <Script src='/js/jquery-ui.js' defer />
       <Script src='/js/jquery.easing.min.js' defer />
       <Script src='/js/jquery.magnific-popup.js' defer />
       <Script src='/js/swiper.min.js' defer />

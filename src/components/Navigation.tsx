@@ -7,14 +7,17 @@ const Navigation = () => {
       <nav className='navbar fixed-top'>
         <div className='container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap'>
           {/* <!-- Text Logo - Use this if you don't have a graphic logo --> */}
-          {/* <!-- <Link className="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index">Pavo</Link> --> */}
+
+          <Link className='text-gray-800 font-semibold text-3xl leading-4 no-underline' href='/'>
+            VanSon
+          </Link>
 
           {/* <!-- Image Logo --> */}
-          <Link
+          {/* <Link
             className='inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline'
             href='/'>
             <img src='images/logo.svg' alt='alternative' className='h-8' />
-          </Link>
+          </Link> */}
 
           <button
             className='background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400'
@@ -29,15 +32,15 @@ const Navigation = () => {
             <ul className='pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row'>
               <li>
                 <Link className='nav-link page-scroll active' href='#home'>
-                  Home <span className='sr-only'>(current)</span>
+                  Trang chủ <span className='sr-only'>(current)</span>
                 </Link>
               </li>
               <li>
                 <Link className='nav-link page-scroll' href='#features'>
-                  Features
+                  Giới thiệu
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link className='nav-link page-scroll' href='#details'>
                   Details
                 </Link>
@@ -46,7 +49,7 @@ const Navigation = () => {
                 <Link className='nav-link page-scroll' href='#pricing'>
                   Pricing
                 </Link>
-              </li>
+              </li> */}
               <li className='dropdown'>
                 <Link
                   className='nav-link dropdown-toggle'
@@ -55,34 +58,70 @@ const Navigation = () => {
                   data-toggle='dropdown'
                   aria-haspopup='true'
                   aria-expanded='false'>
-                  Drop
+                  Danh mục sản phẩm
                 </Link>
                 <div className='dropdown-menu' aria-labelledby='dropdown01'>
                   <Link className='dropdown-item' href='/article'>
-                    Article Details
+                    Sản phẩm 1
                   </Link>
                   <div className='dropdown-divider'></div>
                   <Link className='dropdown-item' href='/terms'>
-                    Terms Conditions
+                    Sản phẩm 2
                   </Link>
                   <div className='dropdown-divider'></div>
                   <Link className='dropdown-item' href='/privacy'>
-                    Privacy Policy
+                    Sản phẩm 3
                   </Link>
                 </div>
               </li>
-              <li>
+              <li className='dropdown'>
+                <Link
+                  className='nav-link dropdown-toggle'
+                  href='#'
+                  id='dropdown02'
+                  data-toggle='dropdown'
+                  aria-haspopup='true'
+                  aria-expanded='false'>
+                  Dịch vụ
+                </Link>
+                <div className='dropdown-menu' aria-labelledby='dropdown02'>
+                  <Link className='dropdown-item' href='/article'>
+                    Sửa chữa
+                  </Link>
+                  <div className='dropdown-divider'></div>
+                  <Link className='dropdown-item' href='/terms'>
+                    Bảo hành
+                  </Link>
+                  <div className='dropdown-divider'></div>
+                  <Link className='dropdown-item' href='/privacy'>
+                    Bảo trì
+                  </Link>
+                </div>
+              </li>
+              {/* <li>
                 <Link className='nav-link page-scroll' href='#download'>
                   Download
                 </Link>
-              </li>
+              </li> */}
             </ul>
-            <span className='block lg:ml-3.5'>
-              <Link className='no-underline' href='#your-link'>
-                <i className='fab fa-apple text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200 mr-1.5'></i>
+            <span className='block space-x-2 lg:ml-3.5'>
+              <Link className='no-underline' href='https://www.facebook.com/'>
+                <i
+                  data-toggle='tooltip'
+                  className='fab fa-facebook text-indigo-600 text-xl'
+                  title='Theo dõi trên Facebook'></i>
               </Link>
-              <Link className='no-underline' href='#your-link'>
-                <i className='fab fa-android text-indigo-600 hover:text-pink-500 text-xl transition-all duration-200'></i>
+              <Link className='no-underline' href='https://www.youtube.com/'>
+                <i
+                  data-toggle='tooltip'
+                  className='fab fa-youtube text-red-500 text-xl'
+                  title='Theo dõi trên Youtube'></i>
+              </Link>
+              <Link className='no-underline' href='tel:123456789' replace>
+                <i
+                  data-toggle='tooltip'
+                  className='fa fa-phone text-pink-500 text-xl'
+                  title='Liên hệ Hotline'></i>
               </Link>
             </span>
           </div>

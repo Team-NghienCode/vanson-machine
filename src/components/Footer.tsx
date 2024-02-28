@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='footer'>
         <div className='container px-4 sm:px-8'>
           <h4 className='mb-8 lg:max-w-3xl lg:mx-auto'>
-            Pavo is a mobile application for marketing automation and you can reach the team at
+            Pavo is a mobile application for marketing automation and you can reach the team at&nbsp;
             <Link className='text-indigo-600 hover:text-gray-500' href='mailto:email@domain.com'>
               email@domain.com
             </Link>
@@ -68,14 +68,14 @@ const Footer = () => {
           <p className='pb-2 p-small statement'>
             Copyright ©
             <Link href='#your-link' className='no-underline'>
-              Your name
+              LoganZ
             </Link>
           </p>
 
           <p className='pb-2 p-small statement'>
-            Distributed by :
-            <Link href='https://themewagon.com/' className='no-underline'>
-              Themewagon
+            Distributed by:&nbsp;
+            <Link href='https://github.com/Team-NghienCode' className='no-underline' replace>
+              Team NghienCode
             </Link>
           </p>
         </div>
