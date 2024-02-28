@@ -1,16 +1,14 @@
-/* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
-import Header from '../components/HomePage/Header/Header';
-import Introduction from '../components/HomePage/Header/Introduction';
-import Features from '../components/HomePage/Header/Features';
-import Detail1 from '../components/HomePage/Header/Detail1';
-import Detail2 from '../components/HomePage/Header/Detail2';
-import DetailsLightbox from '../components/HomePage/Header/DetailsLightbox';
-import Detail3 from '../components/HomePage/Header/Detail3';
-import Statistics from '../components/HomePage/Header/Statistics';
-import Testimonials from '../components/HomePage/Header/Testimonials';
-import Pricing from '../components/HomePage/Header/Pricing';
-import Conclusion from '../components/HomePage/Header/Conclusion';
+import Header from '@/components/Header';
+import Introduction from '@/components/Introduction';
+import Features from '@/components/Features';
+import Detail1 from '@/components/Detail1';
+import Detail2 from '@/components/Detail2';
+import DetailsLightbox from '@/components/DetailsLightbox';
+import Detail3 from '@/components/Detail3';
+import Statistics from '@/components/Statistics';
+import Testimonials from '@/components/Testimonials';
+import Pricing from '@/components/Pricing';
+import Conclusion from '@/components/Conclusion';
 
 export default function Home() {
   return (

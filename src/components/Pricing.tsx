@@ -9,13 +9,10 @@ export default function Pricing(props: IPricingProps) {
       <div id='pricing' className='cards-2'>
         <div className='absolute bottom-0 h-40 w-full bg-white'></div>
         <div className='container px-4 pb-px sm:px-8'>
-          <h2 className='mb-2.5 text-white lg:max-w-xl lg:mx-auto'>
-            Pricing options for all budgets
-          </h2>
+          <h2 className='mb-2.5 text-white lg:max-w-xl lg:mx-auto'>Pricing options for all budgets</h2>
           <p className='mb-16 text-white lg:max-w-3xl lg:mx-auto'>
-            Our pricing plans are setup in such a way that any user can start
-            enjoying Pavo without worrying so much about costs. They are
-            flexible and work for any type of industry
+            Our pricing plans are setup in such a way that any user can start enjoying Pavo without worrying
+            so much about costs. They are flexible and work for any type of industry
           </p>
 
           {/* <!-- Card--> */}
@@ -27,9 +24,7 @@ export default function Pricing(props: IPricingProps) {
                 <span className='value'>29</span>
               </div>
               <div className='frequency'>monthly</div>
-              <p>
-                This basic package covers the marketing needs of small startups
-              </p>
+              <p>This basic package covers the marketing needs of small startups</p>
               <ul className='list mb-7 space-y-2 text-left'>
                 <li className='flex'>
                   <i className='fas fa-chevron-right'></i>
@@ -105,9 +100,7 @@ export default function Pricing(props: IPricingProps) {
                 <span className='value'>49</span>
               </div>
               <div className='frequency'>monthly</div>
-              <p>
-                This is a comprehensive package designed for big organizations
-              </p>
+              <p>This is a comprehensive package designed for big organizations</p>
               <ul className='list mb-7 text-left space-y-2'>
                 <li className='flex'>
                   <i className='fas fa-chevron-right'></i>

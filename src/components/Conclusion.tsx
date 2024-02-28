@@ -13,8 +13,7 @@ export default function Conclusion(props: IConclusionProps) {
           </div>
           <div className='lg:mt-24 xl:mt-44 xl:ml-12'>
             <p className='mb-9 text-gray-800 text-3xl leading-10'>
-              Team management mobile applications don’t get much better than
-              Pavo. Download it today
+              Team management mobile applications don’t get much better than Pavo. Download it today
             </p>
             <Link className='btn-solid-lg' href='#your-link'>
               <i className='fab fa-apple'></i>Download

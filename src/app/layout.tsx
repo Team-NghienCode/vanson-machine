@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import Link from 'next/link';

@@ -15,8 +15,7 @@ export default function Features(props: IFeaturesProps) {
             <div className='card-body'>
               <h5 className='card-title'>Platform Integration</h5>
               <p className='mb-4'>
-                You sales force can use the app on any smartphone platform
-                without compatibility issues
+                You sales force can use the app on any smartphone platform without compatibility issues
               </p>
             </div>
           </div>
@@ -30,8 +29,7 @@ export default function Features(props: IFeaturesProps) {
             <div className='card-body'>
               <h5 className='card-title'>Easy On Resources</h5>
               <p className='mb-4'>
-                Works smoothly even on older generation hardware due to our
-                optimization efforts
+                Works smoothly even on older generation hardware due to our optimization efforts
               </p>
             </div>
           </div>
@@ -45,8 +43,7 @@ export default function Features(props: IFeaturesProps) {
             <div className='card-body'>
               <h5 className='card-title'>Great Performance</h5>
               <p className='mb-4'>
-                Optimized code and innovative technology insure no delays and
-                ultra-fast responsiveness
+                Optimized code and innovative technology insure no delays and ultra-fast responsiveness
               </p>
             </div>
           </div>
@@ -60,8 +57,7 @@ export default function Features(props: IFeaturesProps) {
             <div className='card-body'>
               <h5 className='card-title'>Multiple Languages</h5>
               <p className='mb-4'>
-                Choose from one of the 40 languages that come pre-installed and
-                start selling smarter
+                Choose from one of the 40 languages that come pre-installed and start selling smarter
               </p>
             </div>
           </div>
@@ -75,8 +71,7 @@ export default function Features(props: IFeaturesProps) {
             <div className='card-body'>
               <h5 className='card-title'>Free Updates</h5>
               <p className='mb-4'>
-                Don&apos;t worry about future costs, pay once and receive all
-                future updates at no extra cost
+                Don&apos;t worry about future costs, pay once and receive all future updates at no extra cost
               </p>
             </div>
           </div>
@@ -90,8 +85,7 @@ export default function Features(props: IFeaturesProps) {
             <div className='card-body'>
               <h5 className='card-title'>Community Support</h5>
               <p className='mb-4'>
-                Register the app and get access to knowledge and ideas from the
-                Pavo online community
+                Register the app and get access to knowledge and ideas from the Pavo online community
               </p>
             </div>
           </div>
