@@ -1,6 +1,11 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Navigation = () => {
+  const pathname = usePathname();
+
   return (
     <>
       {/* <!-- Navigation --> */}
@@ -31,12 +36,12 @@ const Navigation = () => {
             id='navbarsExampleDefault'>
             <ul className='pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row'>
               <li>
-                <Link className='nav-link page-scroll active' href='#home'>
+                <Link className={`nav-link ${pathname === '/' && 'active'}`} href='/'>
                   Trang chủ <span className='sr-only'>(current)</span>
                 </Link>
               </li>
               <li>
-                <Link className='nav-link page-scroll' href='#features'>
+                <Link className={`nav-link ${pathname === '/gioi-thieu' && 'active'}`} href='/gioi-thieu'>
                   Giới thiệu
                 </Link>
               </li>

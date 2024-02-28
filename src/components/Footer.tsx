@@ -6,7 +6,7 @@ const Footer = () => {
       {/* <!-- Footer --> */}
       <div className='footer'>
         <div className='container px-4 sm:px-8'>
-          <h4 className='mb-8 lg:max-w-3xl lg:mx-auto'>
+          {/* <h4 className='mb-8 lg:max-w-3xl lg:mx-auto'>
             Pavo is a mobile application for marketing automation and you can reach the team at&nbsp;
             <Link className='text-indigo-600 hover:text-gray-500' href='mailto:email@domain.com'>
               email@domain.com
@@ -43,7 +43,7 @@ const Footer = () => {
                 <i className='fab fa-youtube fa-stack-1x'></i>
               </Link>
             </span>
-          </div>
+          </div> */}
           {/* <!-- end of social-container --> */}
         </div>
         {/* <!-- end of container --> */}
@@ -66,7 +66,7 @@ const Footer = () => {
             </li>
           </ul>
           <p className='pb-2 p-small statement'>
-            Copyright ©
+            Copyright ©&nbsp;
             <Link href='#your-link' className='no-underline'>
               LoganZ
             </Link>
