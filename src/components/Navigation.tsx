@@ -6,6 +6,14 @@ import { usePathname } from 'next/navigation';
 const Navigation = () => {
   const pathname = usePathname();
 
+  const menuProducts = [
+    { id: 1, name: 'Máy May Công Nghiệp', link: '/san-pham/may-may-cong-nghiep' },
+    { id: 2, name: 'Máy May Bao', link: '/san-pham/may-may-bao' },
+    { id: 3, name: 'Máy Cắt Vải', link: '/san-pham/may-cat-vai' },
+    { id: 4, name: 'Máy Thêu Vi Tính', link: '/san-pham/may-theu-vi-tinh' }
+
+  ];
+
   return (
     <>
       {/* <!-- Navigation --> */}
@@ -66,17 +74,14 @@ const Navigation = () => {
                   Danh mục sản phẩm
                 </Link>
                 <div className='dropdown-menu' aria-labelledby='dropdown01'>
-                  <Link className='dropdown-item' href='/article'>
-                    Sản phẩm 1
-                  </Link>
-                  <div className='dropdown-divider'></div>
-                  <Link className='dropdown-item' href='/terms'>
-                    Sản phẩm 2
-                  </Link>
-                  <div className='dropdown-divider'></div>
-                  <Link className='dropdown-item' href='/privacy'>
-                    Sản phẩm 3
-                  </Link>
+                  {menuProducts.map((item, index) => (
+                    <>
+                      <Link key={item.id} className='dropdown-item' href={item.link}>
+                        {item.name}
+                      </Link>
+                      {index < menuProducts.length - 1 && <div className='dropdown-divider'></div>}
+                    </>
+                  ))}
                 </div>
               </li>
               <li className='dropdown'>
