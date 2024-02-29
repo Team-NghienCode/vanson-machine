@@ -3,8 +3,8 @@ import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import Navigation from '@/components/Navigation/Navigation';
+import Footer from '@/components/Footer/Footer';
 
 // import .css from public folder
 import '../../public/css/jquery-ui.css';
@@ -34,7 +34,10 @@ export default function RootLayout({
       <Script src='/js/swiper.min.js' defer />
       <Script src='/js/scripts.js' defer />
 
-      <body className={font.className} data-spy='scroll' data-target='.fixed-top'>
+      <body
+        className={font.className}
+        data-spy='scroll'
+        data-target='.fixed-top'>
         <Navigation />
         {children}
         <Footer />
