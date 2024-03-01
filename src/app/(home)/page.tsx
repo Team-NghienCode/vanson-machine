@@ -19,7 +19,19 @@ export default function Home() {
       <Introduction />
       <TopBanChay />
 
-      <TopSanPham/>
+      <TopSanPham label='máy may công nghiệp' />
+
+      <TopSanPham label='MÁY CẮT VẢI' />
+
+      <TopSanPham label='MÁY MAY BAO' />
+
+      <TopSanPham label='MÁY THÊU VI TÍNH' />
+
+      <TopSanPham label='MÁY MAY GIÀY DA, BALO, TÚI, SOFA' />
+
+      <TopSanPham label='MÔ TƠ MÁY MAY' />
+
+      <TopSanPham label='máy may công nghiệp' />
 
       {/* <Detail1 />
       <Detail2 />
