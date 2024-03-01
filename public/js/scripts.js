@@ -143,6 +143,8 @@
         });
         a = 1;
       }
+    } else {
+      a = 0;
     }
   });
 
@@ -183,7 +185,7 @@
   //   return menuItems;
   // }
 
-  // /* Prevents adding of # at the end of URL on click of non-pagescroll links */
+  /* Prevents adding of # at the end of URL on click of non-pagescroll links */
   // $('.nav-link').click(function (e) {
   //   var hash = $(this).attr('href').substr(1);
   //   if (hash == '') e.preventDefault();
