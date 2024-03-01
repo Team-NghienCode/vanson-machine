@@ -1,17 +1,10 @@
 import type { Metadata } from 'next';
-import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-
-// import .css from public folder
-import '../../public/css/jquery-ui.css';
-import '../../public/css/fontawesome-all.css';
-import '../../public/css/magnific-popup.css';
-import '../../public/css/swiper.css';
-import '../../public/css/styles.css';
+import { useEffect, useRef } from 'react';
 
 const font = Inter({ subsets: ['vietnamese'] });
 
@@ -27,17 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <Script src='/js/jquery.min.js' defer />
-      <Script src='/js/jquery-ui.js' defer />
-      <Script src='/js/jquery.easing.min.js' defer />
-      <Script src='/js/jquery.magnific-popup.js' defer />
-      <Script src='/js/swiper.min.js' defer />
-      <Script src='/js/scripts.js' defer />
+      <head>
+        <script src='/js/jquery.min.js' async />
+        <script src='/js/jquery.easing.min.js' async />
+        <script src='/js/scripts.js' async />
+      </head>
 
-      <body
-        className={font.className}
-        data-spy='scroll'
-        data-target='.fixed-top'>
+      <body className={font.className} data-spy='scroll' data-target='.fixed-top'>
         <Navigation />
         {children}
         <Footer />

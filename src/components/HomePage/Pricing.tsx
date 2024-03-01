@@ -1,3 +1,5 @@
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import * as React from 'react';
 
@@ -27,19 +29,19 @@ export default function Pricing(props: IPricingProps) {
               <p>This basic package covers the marketing needs of small startups</p>
               <ul className='list mb-7 space-y-2 text-left'>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>List building and relations</div>
                 </li>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>Seamless platform integration</div>
                 </li>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>Great performance on devices</div>
                 </li>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>Community support and videos</div>
                 </li>
               </ul>
@@ -65,19 +67,19 @@ export default function Pricing(props: IPricingProps) {
               <p>This is a more advanced package suited for medium companies</p>
               <ul className='list mb-7 space-y-2 text-left'>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>List building and relations</div>
                 </li>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>Seamless platform integration</div>
                 </li>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>Great performance on devices</div>
                 </li>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>Community support and videos</div>
                 </li>
               </ul>
@@ -103,19 +105,19 @@ export default function Pricing(props: IPricingProps) {
               <p>This is a comprehensive package designed for big organizations</p>
               <ul className='list mb-7 text-left space-y-2'>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>List building and relations</div>
                 </li>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>Seamless platform integration</div>
                 </li>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>Great performance on devices</div>
                 </li>
                 <li className='flex'>
-                  <i className='fas fa-chevron-right'></i>
+                  <FontAwesomeIcon icon={faChevronRight} />
                   <div>Community support and videos</div>
                 </li>
               </ul>

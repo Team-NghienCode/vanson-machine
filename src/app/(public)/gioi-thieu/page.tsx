@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
 export default function ArticlePage() {
@@ -44,24 +46,26 @@ export default function ArticlePage() {
           <h2 className='mb-4'>
             Khi mua hàng tại Điện máy tổng hợp miền Nam, chúng tôi luôn cam kết với Quý khách hàng:
           </h2>
-          <ul className='list-unstyled mb-6 space-y-2'>
-            <li className='flex'>
-              <i className='fas fa-circle mr-2'></i> Sản phẩm chính hãng, mới 100%
+          <ul className='list-unstyled mb-6 space-y-2 *:flex *:items-center'>
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs mr-2' /> Sản phẩm chính hãng, mới 100%
             </li>
-            <li className='flex'>
-              <i className='fas fa-circle mr-2'></i> Nhân viên giàu kinh nghiệm và tận tâm
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs mr-2' /> Nhân viên giàu kinh nghiệm và tận
+              tâm
             </li>
-            <li className='flex'>
-              <i className='fas fa-circle mr-2'></i> Giá cả sản phẩm phải chăng
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs mr-2' /> Giá cả sản phẩm phải chăng
             </li>
-            <li className='flex'>
-              <i className='fas fa-circle mr-2'></i> Chính sách bảo hành sản phẩm
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs mr-2' /> Chính sách bảo hành sản phẩm
             </li>
-            <li className='flex'>
-              <i className='fas fa-circle mr-2'></i> Giao hàng tận nơi, nhanh chóng và đảm bảo{' '}
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs mr-2' /> Giao hàng tận nơi, nhanh chóng và
+              đảm bảo
             </li>
-            <li className='flex'>
-              <i className='fas fa-circle mr-2'></i> Hỗ trợ lắp đặt miễn phí
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs mr-2' /> Hỗ trợ lắp đặt miễn phí
             </li>
           </ul>
           <p className='mb-6'>
@@ -79,40 +83,40 @@ export default function ArticlePage() {
         <div className='container px-4 sm:px-8 xl:px-32'>
           <h3 className='mb-2'>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ XUẤT NHẬP KHẨU ĐIỆN MÁY TỔNG HỢP MIỀN NAM</h3>
 
-          <ul className='list-unstyled mb-12 space-y-2'>
-            <li className='flex'>
-              <i className='fas fa-circle'></i>
+          <ul className='list-unstyled mb-12 space-y-2 *:flex *:items-center'>
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs' />
               <div className='flex-1 ml-2'>
                 <strong>Mã số thuế:</strong> 0317087514
               </div>
             </li>
-            <li className='flex'>
-              <i className='fas fa-circle'></i>
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs' />
               <div className='flex-1 ml-2'>
                 <strong>Người đại diện:</strong> Phạm Văn Lâm
               </div>
             </li>
-            <li className='flex'>
-              <i className='fas fa-circle'></i>
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs' />
               <div className='flex-1 ml-2'>
                 <strong>Trụ sở chính:</strong> 1/76 Đường Nguyễn Thế Truyện, Phường Tân Sơn Nhì, Quận Tân Phú,
                 Thành phố Hồ Chí Minh, Việt Nam
               </div>
             </li>
-            <li className='flex'>
-              <i className='fas fa-circle'></i>
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs' />
               <div className='flex-1 ml-2'>
                 <strong>Website:</strong> https://dienmaytonghopmiennam.com/
               </div>
             </li>
-            <li className='flex'>
-              <i className='fas fa-circle'></i>
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs' />
               <div className='flex-1 ml-2'>
                 <strong>SĐT:</strong> 0914 639 068 (Mr Lâm)
               </div>
             </li>
-            <li className='flex'>
-              <i className='fas fa-circle'></i>
+            <li>
+              <FontAwesomeIcon icon={faCircle} className='text-xs' />
               <div className='flex-1 ml-2'>
                 <strong>Email:</strong> maytonghop2010@gmail.com
               </div>

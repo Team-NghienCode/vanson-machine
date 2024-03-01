@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+import { faSquare } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
 export default function PrivacyPage() {
@@ -54,7 +56,7 @@ export default function PrivacyPage() {
           </p>
           <ul className='list-unstyled mb-6 space-y-2'>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>To identify you</strong> when you login to your account so we can start or user
                 security process for the entire session and duration and the need to protect sensitive data
@@ -62,7 +64,7 @@ export default function PrivacyPage() {
               </div>
             </li>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>To enable us</strong> to operate the Services and provide them to you without fear of
                 losing precious confidential information of your users and find more stuff to place on the
@@ -70,7 +72,7 @@ export default function PrivacyPage() {
               </div>
             </li>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>To verify your</strong> transactions and for purchase confirmation, billing, security,
                 and authentication (including security tokens for communication with installed). Always take
@@ -120,7 +122,7 @@ export default function PrivacyPage() {
           <div className='text-box mb-12'>
             <ul className='list-unstyled space-y-2 mb-4'>
               <li className='flex'>
-                <i className='fas fa-square'></i>
+                <FontAwesomeIcon icon={faSquare} />
                 <div className='flex-1 ml-2'>
                   <strong>To identify you</strong> when you login to your account so we can start or user
                   security process for the entire session and duration and the need to protect sensitive data
@@ -128,7 +130,7 @@ export default function PrivacyPage() {
                 </div>
               </li>
               <li className='flex'>
-                <i className='fas fa-square'></i>
+                <FontAwesomeIcon icon={faSquare} />
                 <div className='flex-1 ml-2'>
                   <strong>To enable us</strong> to operate the Services and provide them to you without fear
                   of losing precious confidential information of your users and find more stuff to place on
@@ -136,7 +138,7 @@ export default function PrivacyPage() {
                 </div>
               </li>
               <li className='flex'>
-                <i className='fas fa-square'></i>
+                <FontAwesomeIcon icon={faSquare} />
                 <div className='flex-1 ml-2'>
                   <strong>To verify your</strong> transactions and for purchase confirmation, billing,
                   security, and authentication (including security tokens for communication with installed).
@@ -144,7 +146,7 @@ export default function PrivacyPage() {
                 </div>
               </li>
               <li className='flex'>
-                <i className='fas fa-square'></i>
+                <FontAwesomeIcon icon={faSquare} />
                 <div className='flex-1 ml-2'>
                   <strong>To better understand</strong> your needs and the needs of users in the aggregate,
                   diagnose problems, analyze trends, improve the features and usability of the Services, and
@@ -152,7 +154,7 @@ export default function PrivacyPage() {
                 </div>
               </li>
               <li className='flex'>
-                <i className='fas fa-square'></i>
+                <FontAwesomeIcon icon={faSquare} />
                 <div className='flex-1 ml-2'>
                   <strong>We also use</strong> non-identifiable information gathered for statistical purposes
                   to keep track of the number of visits to the Services with a view to introducing

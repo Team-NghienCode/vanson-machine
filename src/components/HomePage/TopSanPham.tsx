@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
-import data from '../../../public/data/data';
+import data from '@/data/topbanchay';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 interface ITopSanPham {
   label: string;
@@ -30,7 +32,10 @@ const TopSanPham = ({ label }: ITopSanPham) => {
           <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3'>
             {data.map((item) => {
               return (
-                <Link href={'/product/' + item.title} key={item.title} className='card cursor-pointer group'>
+                <Link
+                  href={'/product/' + item.title.split(' ').join('-')}
+                  key={item.title}
+                  className='card cursor-pointer group'>
                   {item.sale && (
                     <div className='badge-container absolute left-0 top-0 z-[21]'>
                       <div className='callout badge badge-square'>
@@ -63,14 +68,11 @@ const TopSanPham = ({ label }: ITopSanPham) => {
         </div>
         <div
           className='-mt-8 mb-2 bg-red-600 text-white border border-solid p-1
-          border-transparent cursor-pointer inline-block 
-          font-bold min-h-5 relative text-center uppercase align-middle'
+          border-transparent cursor-pointer flex max-w-fit items-center
+          font-bold min-h-5 relative text-center uppercase justify-center'
           style={{ borderRadius: '10px' }}>
-          <span className='inline-block'>Xem thêm</span>
-          <i
-            className='fa fa-arrow-circle-right relative inline-block transform-none p-0 ml-1 -top-[1.5px] mr-1 align-middle'
-            aria-hidden='true'
-          />
+          <span className='inline-block pl-1'>Xem thêm</span>
+          <FontAwesomeIcon icon={faArrowCircleRight} className='inline-block transform-none p-0 ml-1 mr-1' />
         </div>
       </div>
     </div>
