@@ -3,8 +3,8 @@ import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-import Navigation from '@/components/Navigation/Navigation';
-import Footer from '@/components/Footer/Footer';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 // import .css from public folder
 import '../../public/css/jquery-ui.css';
