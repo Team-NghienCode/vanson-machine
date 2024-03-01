@@ -1,7 +1,7 @@
 import Header from '@/components/HomePage/Header';
 import Introduction from '@/components/HomePage/Introduction';
-import TopBanChay from '@/components/TopBanChay';
-import TopSanPham from '@/components/TopSanPham';
+import TopBanChay from '@/components/HomePage/TopBanChay';
+import TopSanPham from '@/components/HomePage/TopSanPham';
 // import Detail1 from '@/components/Detail1';
 // import Detail2 from '@/components/Detail2';
 // import DetailsLightbox from '@/components/DetailsLightbox';
