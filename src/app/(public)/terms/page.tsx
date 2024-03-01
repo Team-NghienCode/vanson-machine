@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+import { faSquare } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
 export default function TermsPage() {
@@ -56,7 +58,7 @@ export default function TermsPage() {
           </p>
           <ul className='list-unstyled mb-6 space-y-2'>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>Modified or unmodified</strong> for redistribution or resale of any kind. You can’t
                 use one of our themes on a HTML domain. More on HTML Vs CSS, you can read here where all the
@@ -64,7 +66,7 @@ export default function TermsPage() {
               </div>
             </li>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>You can use our templates</strong> do develop sites for your clients and also for a
                 limited amount our templates inherit the GNU general public license from HTML but no more than
@@ -72,7 +74,7 @@ export default function TermsPage() {
               </div>
             </li>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>For redistribution or resale</strong> of any kind. You can’t use one of our themes on
                 a HTML domain. More on HTML Vs CSS, you can read here. You can use our templates do develop
@@ -110,35 +112,35 @@ export default function TermsPage() {
           </p>
           <ul className='list-unstyled mb-12 space-y-2'>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>Cookies are small</strong> text files placed on your device when you visit a website
                 or use the service
               </div>
             </li>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>All templates</strong> in the roundup are premium which means you need to pay for them
                 but we're talking
               </div>
             </li>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>Will help authors </strong> make a living. In return you get a high quality, updated
                 item together
               </div>
             </li>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>Besides buying</strong> the template you need some basic web skills in order to
                 customize it nothing
               </div>
             </li>
             <li className='flex'>
-              <i className='fas fa-square'></i>
+              <FontAwesomeIcon icon={faSquare} />
               <div className='flex-1 ml-2'>
                 <strong>You can always</strong> hire a web designer to help with the customization work while
                 you provide

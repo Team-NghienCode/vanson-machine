@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import data from '../../../public/data/data';
+import data from '@/data/topbanchay';
 
 export default function TopBanChay() {
   return (
@@ -10,7 +10,10 @@ export default function TopBanChay() {
         <div className='grid gap-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-4'>
           {data.map((item) => {
             return (
-              <Link href={'/product/' + item.title} key={item.title} className='card cursor-pointer group'>
+              <Link
+                href={'/product/' + item.title.split(' ').join('-')}
+                key={item.title}
+                className='card cursor-pointer group'>
                 {item.sale && (
                   <div className='badge-container absolute left-0 top-0 z-[21]'>
                     <div className='callout badge badge-square'>

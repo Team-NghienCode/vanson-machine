@@ -5,6 +5,11 @@ import * as React from 'react';
 export interface IProductInfoDetailProps {}
 
 export default function ProductInfoDetail(props: IProductInfoDetailProps) {
+  const gioiThieuRef = React.useRef<HTMLDivElement>(null);
+  const thongSoRef = React.useRef<HTMLDivElement>(null);
+  const tinhNangRef = React.useRef<HTMLDivElement>(null);
+  const luuYRef = React.useRef<HTMLDivElement>(null);
+
   return (
     <div className='product-info-detail'>
       <div className='video'>
@@ -21,21 +26,53 @@ export default function ProductInfoDetail(props: IProductInfoDetailProps) {
           <span>Nội dung</span>
         </div>
         <div className='*:block hover:*:underline'>
-          <Link className='page-scroll' href='#gioi-thieu'>
+          <Link
+            href='#gioi-thieu'
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({
+                top: gioiThieuRef.current?.offsetTop! - 70,
+                behavior: 'smooth'
+              });
+            }}>
             Giới thiệu về máy may 1 kim điện tử Juki DDL 7000A-7
           </Link>
-          <Link className='page-scroll' href='#thong-so'>
+          <Link
+            href='#thong-so'
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({
+                top: thongSoRef.current?.offsetTop! - 70,
+                behavior: 'smooth'
+              });
+            }}>
             Thông số kỹ thuật của máy may 1 kim điện tử Juki DDL 7000A-7
           </Link>
-          <Link className='page-scroll' href='#tinh-nang'>
+          <Link
+            href='#tinh-nang'
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({
+                top: tinhNangRef.current?.offsetTop! - 70,
+                behavior: 'smooth'
+              });
+            }}>
             Những tính năng nổi bật của máy may 1 kim điện tử Juki DDL 7000A-7
           </Link>
-          <Link className='page-scroll' href='#luu-y'>
+          <Link
+            href='#luu-y'
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({
+                top: luuYRef.current?.offsetTop! - 70,
+                behavior: 'smooth'
+              });
+            }}>
             Những lưu ý khi sử dụng máy may 1 kim điện tử Juki DDL 7000A-7
           </Link>
         </div>
       </div>
-      <div id='gioi-thieu' className='mt-3'>
+      <div ref={gioiThieuRef} className='mt-3'>
         <div className='h3-bold text-text-1'>
           <span>Giới thiệu về máy may 1 kim điện tử Juki DDL 7000A-7</span>
         </div>
@@ -90,7 +127,7 @@ export default function ProductInfoDetail(props: IProductInfoDetailProps) {
           </div>
         </div>
       </div>
-      <div id='thong-so' className='mt-16'>
+      <div ref={thongSoRef} className='mt-16'>
         <div>
           <span className='h5-bold text-text-1'>
             Thông số kỹ thuật của máy may 1 kim điện tử Juki DDL 7000A-7
@@ -387,7 +424,7 @@ export default function ProductInfoDetail(props: IProductInfoDetailProps) {
           </tbody>
         </table>
       </div>
-      <div id='tinh-nang' className='mt-6'>
+      <div ref={tinhNangRef} className='mt-6'>
         <div className='h3-bold text-text-1'>
           <span>Những tính năng nổi bật của máy may 1 kim điện tử Juki DDL 7000A-7</span>
         </div>
@@ -429,7 +466,7 @@ export default function ProductInfoDetail(props: IProductInfoDetailProps) {
           </ul>
         </div>
       </div>
-      <div id='luu-y' className='mt-6'>
+      <div ref={luuYRef} className='mt-6'>
         <div className='h3-bold text-text-1'>
           <span>Những lưu ý khi sử dụng máy may 1 kim điện tử Juki DDL 7000A-7</span>
         </div>

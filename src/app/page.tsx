@@ -2,12 +2,7 @@ import Header from '@/components/HomePage/Header';
 import Introduction from '@/components/HomePage/Introduction';
 import TopBanChay from '@/components/HomePage/TopBanChay';
 import TopSanPham from '@/components/HomePage/TopSanPham';
-// import Detail1 from '@/components/Detail1';
-// import Detail2 from '@/components/Detail2';
-// import DetailsLightbox from '@/components/DetailsLightbox';
-// import Detail3 from '@/components/Detail3';
-// import Statistics from '@/components/Statistics';
-// import Testimonials from '@/components/Testimonials';
+// import Statistics from '@/components/Statistics';\
 // import Pricing from '@/components/Pricing';
 // import Conclusion from '@/components/Conclusion';
 
@@ -19,7 +14,7 @@ export default function Home() {
       <Introduction />
       <TopBanChay />
 
-      <TopSanPham label='máy may công nghiệp' />
+      <TopSanPham label='MÁY MAY CÔNG NGHIỆP' />
 
       <TopSanPham label='MÁY CẮT VẢI' />
 
@@ -30,8 +25,6 @@ export default function Home() {
       <TopSanPham label='MÁY MAY GIÀY DA, BALO, TÚI, SOFA' />
 
       <TopSanPham label='MÔ TƠ MÁY MAY' />
-
-      <TopSanPham label='máy may công nghiệp' />
 
       {/* <Detail1 />
       <Detail2 />
