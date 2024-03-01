@@ -18,8 +18,8 @@ const TopSanPham = ({ label }: ITopSanPham) => {
           <div className='ml-auto mr-0 flex-1 relative w-full'>
             <div className='mb-2 block border-red-600 border-t border-solid bg-white p-1 relative mt-5'>
               <div className='flex items-center justify-center absolute left-1/2 w-max top-0 -translate-x-1/2 -translate-y-1/2'>
-                <label className='linehome border border-solid border-red-600 text-base text-white bg-red-700 uppercase px-9 py-2'>
-                  {label.toUpperCase()}
+                <label className='linehome font-bold border border-solid border-red-500 text-base text-white bg-red-600 uppercase px-9 py-2'>
+                  {label}
                 </label>
               </div>
             </div>
@@ -55,7 +55,7 @@ const TopSanPham = ({ label }: ITopSanPham) => {
                     <p className='mb-4 text-red-600 font-bold'>
                       {item.sale ? (
                         <>
-                          <del className='text-red-800'>{item.price.toLocaleString('de-DE')} ₫</del> &nbsp;{' '}
+                          <del className='text-red-800'>{item.price.toLocaleString('de-DE')} ₫</del> &nbsp;
                           {item.priceSale.toLocaleString('de-DE')} ₫
                         </>
                       ) : (
