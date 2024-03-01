@@ -1,10 +1,16 @@
-import data from '../../public/data/data';
+'use client';
+
+import { useRouter } from 'next/navigation';
+
+import data from '../../../public/data/data';
 
 interface ITopSanPham {
   label: string;
 }
 
 const TopSanPham = ({ label }: ITopSanPham) => {
+  const router = useRouter();
+
   return (
     <div id='topsanpham' className='cards-3'>
       <div className='px-4 sm:px-14 xl:px-28'>
@@ -28,7 +34,10 @@ const TopSanPham = ({ label }: ITopSanPham) => {
           <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3'>
             {data.map((item) => {
               return (
-                <div key={item.title} className='card'>
+                <div
+                  key={item.title}
+                  className='card cursor-pointer group'
+                  onClick={() => router.push('/product/' + item.title)}>
                   {item.sale && (
                     <div className='badge-container absolute left-0 top-0 z-[21]'>
                       <div className='callout badge badge-square'>
@@ -42,7 +51,7 @@ const TopSanPham = ({ label }: ITopSanPham) => {
                     <img src={item.image} alt='alternative' />
                   </div>
                   <div className='card-body'>
-                    <h5 className='card-title'>{item.title}</h5>
+                    <h5 className='card-title group-hover:underline'>{item.title}</h5>
                     <p className='mb-4 text-red-600 font-bold'>
                       {item.sale ? (
                         <>
@@ -58,6 +67,17 @@ const TopSanPham = ({ label }: ITopSanPham) => {
               );
             })}
           </div>
+        </div>
+        <div
+          className='-mt-8 mb-2 bg-red-600 text-white border border-solid p-1
+          border-transparent cursor-pointer inline-block 
+          font-bold min-h-5 relative text-center uppercase align-middle'
+          style={{ borderRadius: '10px' }}>
+          <span className='inline-block'>Xem thêm</span>
+          <i
+            className='fa fa-arrow-circle-right relative inline-block transform-none p-0 ml-1 -top-[1.5px] mr-1 align-middle'
+            aria-hidden='true'
+          />
         </div>
       </div>
     </div>

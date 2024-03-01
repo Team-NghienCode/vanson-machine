@@ -1,6 +1,11 @@
-import data from '../../public/data/data';
+'use client';
+import { useRouter } from 'next/navigation';
+
+import data from '../../../public/data/data';
 
 export default function TopBanChay() {
+  const router = useRouter();
+
   return (
     <div id='features' className='cards-1'>
       <div className='px-4 sm:px-14 xl:px-28'>
@@ -8,7 +13,10 @@ export default function TopBanChay() {
         <div className='grid gap-4 grid-cols-1 md:grid-cols-3 xl:grid-cols-4'>
           {data.map((item) => {
             return (
-              <div key={item.title} className='card'>
+              <div
+                key={item.title}
+                className='card cursor-pointer group'
+                onClick={() => router.push('/product/' + item.title)}>
                 {item.sale && (
                   <div className='badge-container absolute left-0 top-0 z-[21]'>
                     <div className='callout badge badge-square'>
@@ -22,7 +30,7 @@ export default function TopBanChay() {
                   <img src={item.image} alt='alternative' />
                 </div>
                 <div className='card-body'>
-                  <h5 className='card-title'>{item.title}</h5>
+                  <h5 className='card-title group-hover:underline'>{item.title}</h5>
                   <p className='mb-4 text-red-600 font-bold'>
                     {item.sale ? (
                       <>
