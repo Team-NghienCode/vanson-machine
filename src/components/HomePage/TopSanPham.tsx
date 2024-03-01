@@ -1,6 +1,4 @@
-'use client';
-
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 import data from '../../../public/data/data';
 
@@ -9,8 +7,6 @@ interface ITopSanPham {
 }
 
 const TopSanPham = ({ label }: ITopSanPham) => {
-  const router = useRouter();
-
   return (
     <div id='topsanpham' className='cards-3'>
       <div className='px-4 sm:px-14 xl:px-28'>
@@ -34,10 +30,7 @@ const TopSanPham = ({ label }: ITopSanPham) => {
           <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3'>
             {data.map((item) => {
               return (
-                <div
-                  key={item.title}
-                  className='card cursor-pointer group'
-                  onClick={() => router.push('/product/' + item.title)}>
+                <Link href={'/product/' + item.title} key={item.title} className='card cursor-pointer group'>
                   {item.sale && (
                     <div className='badge-container absolute left-0 top-0 z-[21]'>
                       <div className='callout badge badge-square'>
@@ -63,7 +56,7 @@ const TopSanPham = ({ label }: ITopSanPham) => {
                       )}
                     </p>
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>
