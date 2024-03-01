@@ -9,13 +9,11 @@ const Navigation = () => {
   return (
     <>
       {/* <!-- Navigation --> */}
-      <nav className='navbar fixed-top h-20'>
+      <nav className='navbar fixed-top'>
         <div className='container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap'>
           {/* <!-- Text Logo - Use this if you don't have a graphic logo --> */}
 
-          <Link
-            className='text-gray-800 font-semibold text-3xl leading-4 no-underline'
-            href='/'>
+          <Link className='text-gray-800 font-semibold text-3xl leading-4 no-underline' href='/'>
             VanSon
           </Link>
 
@@ -38,18 +36,12 @@ const Navigation = () => {
             id='navbarsExampleDefault'>
             <ul className='pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row'>
               <li>
-                <Link
-                  className={`nav-link ${pathname === '/' && 'active'}`}
-                  href='/'>
+                <Link className={`nav-link ${pathname === '/' && 'active'}`} href='/'>
                   Trang chủ <span className='sr-only'>(current)</span>
                 </Link>
               </li>
               <li>
-                <Link
-                  className={`nav-link ${
-                    pathname === '/gioi-thieu' && 'active'
-                  }`}
-                  href='/gioi-thieu'>
+                <Link className={`nav-link ${pathname === '/gioi-thieu' && 'active'}`} href='/gioi-thieu'>
                   Giới thiệu
                 </Link>
               </li>
