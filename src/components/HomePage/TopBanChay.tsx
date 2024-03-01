@@ -1,4 +1,5 @@
 'use client';
+
 import { useRouter } from 'next/navigation';
 
 import data from '../../../public/data/data';
@@ -34,7 +35,7 @@ export default function TopBanChay() {
                   <p className='mb-4 text-red-600 font-bold'>
                     {item.sale ? (
                       <>
-                        <del className='text-red-800'>{item.price.toLocaleString('de-DE')} ₫</del> &nbsp;{' '}
+                        <del className='text-red-800'>{item.price.toLocaleString('de-DE')} ₫</del> &nbsp;
                         {item.priceSale.toLocaleString('de-DE')} ₫
                       </>
                     ) : (

@@ -23,7 +23,7 @@
         .stop()
         .animate(
           {
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $($anchor.attr('href')).offset().top - 70
           },
           600,
           'easeInOutExpo'
@@ -186,10 +186,10 @@
   // }
 
   /* Prevents adding of # at the end of URL on click of non-pagescroll links */
-  // $('.nav-link').click(function (e) {
-  //   var hash = $(this).attr('href').substr(1);
-  //   if (hash == '') e.preventDefault();
-  // });
+  $('.page-scroll').click(function (e) {
+    var hash = $(this).attr('href').substr(1);
+    if (hash == '') e.preventDefault();
+  });
 
   // /* Checks page scroll offset and changes active link on page load */
   // changeActive();

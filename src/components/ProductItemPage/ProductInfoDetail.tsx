@@ -13,7 +13,6 @@ export default function ProductInfoDetail(props: IProductInfoDetailProps) {
           height='500'
           src='https://www.youtube.com/embed/NPGpy-8o3BU?si=dIW7LPDSk4zodJ3b'
           title='YouTube video player'
-          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           allowFullScreen></iframe>
       </div>
@@ -22,67 +21,58 @@ export default function ProductInfoDetail(props: IProductInfoDetailProps) {
           <span>Nội dung</span>
         </div>
         <div className='*:block hover:*:underline'>
-          <Link href='#'>
+          <Link className='page-scroll' href='#gioi-thieu'>
             Giới thiệu về máy may 1 kim điện tử Juki DDL 7000A-7
           </Link>
-          <Link href='#'>
+          <Link className='page-scroll' href='#thong-so'>
             Thông số kỹ thuật của máy may 1 kim điện tử Juki DDL 7000A-7
           </Link>
-          <Link href='#'>
+          <Link className='page-scroll' href='#tinh-nang'>
             Những tính năng nổi bật của máy may 1 kim điện tử Juki DDL 7000A-7
           </Link>
-          <Link href='#'>
+          <Link className='page-scroll' href='#luu-y'>
             Những lưu ý khi sử dụng máy may 1 kim điện tử Juki DDL 7000A-7
           </Link>
         </div>
       </div>
-      <div className='mt-3'>
+      <div id='gioi-thieu' className='mt-3'>
         <div className='h3-bold text-text-1'>
           <span>Giới thiệu về máy may 1 kim điện tử Juki DDL 7000A-7</span>
         </div>
         <div className='mt-2'>
           <p>
-            <strong>Máy may 1 kim điện tử Juki DDL 7000A-7</strong> là một máy
-            may công nghiệp chất lượng cao được sản xuất bởi Juki, một trong
-            những thương hiệu nổi tiếng Nhật Bản và là hàng đầu trong lĩnh vực
-            máy may công nghiệp. Đây là một máy may được thiết kế để đáp ứng nhu
-            cầu may mặc chuyên nghiệp, từ các xưởng may đến các nhà máy sản xuất
-            hàng may mặc lớn.
+            <strong>Máy may 1 kim điện tử Juki DDL 7000A-7</strong> là một máy may công nghiệp chất lượng cao
+            được sản xuất bởi Juki, một trong những thương hiệu nổi tiếng Nhật Bản và là hàng đầu trong lĩnh
+            vực máy may công nghiệp. Đây là một máy may được thiết kế để đáp ứng nhu cầu may mặc chuyên
+            nghiệp, từ các xưởng may đến các nhà máy sản xuất hàng may mặc lớn.
           </p>
           <p className='my-3'>
-            <strong>
-              Một số đặc trưng cơ bản của máy may 1 kim điện tử Juki DDL
-              7000A-7:
-            </strong>
+            <strong>Một số đặc trưng cơ bản của máy may 1 kim điện tử Juki DDL 7000A-7:</strong>
           </p>
           <ul className='list-disc ms-5'>
             <li>
-              Hệ thống truyền động trực tiếp: Máy được trang bị hệ thống truyền
-              động trực tiếp, giúp tăng tính chính xác và hiệu suất của máy.
+              Hệ thống truyền động trực tiếp: Máy được trang bị hệ thống truyền động trực tiếp, giúp tăng tính
+              chính xác và hiệu suất của máy.
             </li>
             <li>
-              Kích thước nhỏ gọn: Cả hộp điều khiển và bảng điều khiển được tích
-              hợp vào đầu máy, giúp tiết kiệm không gian và dễ dàng trong việc
-              vận hành.
+              Kích thước nhỏ gọn: Cả hộp điều khiển và bảng điều khiển được tích hợp vào đầu máy, giúp tiết
+              kiệm không gian và dễ dàng trong việc vận hành.
             </li>
             <li>
-              Khả năng may đa dạng vật liệu: Máy có khả năng làm việc với nhiều
-              loại vật liệu khác nhau, đáp ứng các yêu cầu đa dạng của sản xuất
-              may mặc.
+              Khả năng may đa dạng vật liệu: Máy có khả năng làm việc với nhiều loại vật liệu khác nhau, đáp
+              ứng các yêu cầu đa dạng của sản xuất may mặc.
             </li>
             <li>
-              Động cơ servo tiết kiệm năng lượng: Máy trang bị động cơ servo
-              tiết kiệm năng lượng, giúp giảm lượng điện tiêu thụ và mang lại
-              hiệu suất cao hơn.
+              Động cơ servo tiết kiệm năng lượng: Máy trang bị động cơ servo tiết kiệm năng lượng, giúp giảm
+              lượng điện tiêu thụ và mang lại hiệu suất cao hơn.
             </li>
             <li>
-              Đèn LED: Máy được trang bị đèn LED chiếu sáng chính xác, giúp làm
-              việc dễ dàng và tiện lợi trong môi trường ánh sáng tốt.
+              Đèn LED: Máy được trang bị đèn LED chiếu sáng chính xác, giúp làm việc dễ dàng và tiện lợi trong
+              môi trường ánh sáng tốt.
             </li>
             <li>
-              Công tắc cảm ứng: Máy được trang bị công tắc cảm ứng có chức năng
-              cao, giúp ngăn ngừa gãy kim và đảm bảo an toàn trong quá trình
-              may.
+              Công tắc cảm ứng: Máy được trang bị công tắc cảm ứng có chức năng cao, giúp ngăn ngừa gãy kim và
+              đảm bảo an toàn trong quá trình may.
             </li>
           </ul>
         </div>
@@ -100,7 +90,7 @@ export default function ProductInfoDetail(props: IProductInfoDetailProps) {
           </div>
         </div>
       </div>
-      <div className='mt-16'>
+      <div id='thong-so' className='mt-16'>
         <div>
           <span className='h5-bold text-text-1'>
             Thông số kỹ thuật của máy may 1 kim điện tử Juki DDL 7000A-7
@@ -397,108 +387,86 @@ export default function ProductInfoDetail(props: IProductInfoDetailProps) {
           </tbody>
         </table>
       </div>
-      <div className='mt-6'>
+      <div id='tinh-nang' className='mt-6'>
         <div className='h3-bold text-text-1'>
-          <span>
-            Những tính năng nổi bật của máy may 1 kim điện tử Juki DDL 7000A-7
-          </span>
+          <span>Những tính năng nổi bật của máy may 1 kim điện tử Juki DDL 7000A-7</span>
         </div>
         <div className='mt-2'>
           <p>
-            <strong>Máy may 1 kim điện tử Juki DDL 7000A-7</strong> là một máy
-            may công nghiệp chất lượng cao được sản xuất bởi Juki, một trong
-            những thương hiệu nổi tiếng Nhật Bản và là hàng đầu trong lĩnh vực
-            máy may công nghiệp. Đây là một máy may được thiết kế để đáp ứng nhu
-            cầu may mặc chuyên nghiệp, từ các xưởng may đến các nhà máy sản xuất
-            hàng may mặc lớn.
+            <strong>Máy may 1 kim điện tử Juki DDL 7000A-7</strong> là một máy may công nghiệp chất lượng cao
+            được sản xuất bởi Juki, một trong những thương hiệu nổi tiếng Nhật Bản và là hàng đầu trong lĩnh
+            vực máy may công nghiệp. Đây là một máy may được thiết kế để đáp ứng nhu cầu may mặc chuyên
+            nghiệp, từ các xưởng may đến các nhà máy sản xuất hàng may mặc lớn.
           </p>
           <p className='my-3'>
-            <strong>
-              Một số đặc trưng cơ bản của máy may 1 kim điện tử Juki DDL
-              7000A-7:
-            </strong>
+            <strong>Một số đặc trưng cơ bản của máy may 1 kim điện tử Juki DDL 7000A-7:</strong>
           </p>
           <ul className='list-disc ms-5'>
             <li>
-              Hệ thống truyền động trực tiếp: Máy được trang bị hệ thống truyền
-              động trực tiếp, giúp tăng tính chính xác và hiệu suất của máy.
+              Hệ thống truyền động trực tiếp: Máy được trang bị hệ thống truyền động trực tiếp, giúp tăng tính
+              chính xác và hiệu suất của máy.
             </li>
             <li>
-              Kích thước nhỏ gọn: Cả hộp điều khiển và bảng điều khiển được tích
-              hợp vào đầu máy, giúp tiết kiệm không gian và dễ dàng trong việc
-              vận hành.
+              Kích thước nhỏ gọn: Cả hộp điều khiển và bảng điều khiển được tích hợp vào đầu máy, giúp tiết
+              kiệm không gian và dễ dàng trong việc vận hành.
             </li>
             <li>
-              Khả năng may đa dạng vật liệu: Máy có khả năng làm việc với nhiều
-              loại vật liệu khác nhau, đáp ứng các yêu cầu đa dạng của sản xuất
-              may mặc.
+              Khả năng may đa dạng vật liệu: Máy có khả năng làm việc với nhiều loại vật liệu khác nhau, đáp
+              ứng các yêu cầu đa dạng của sản xuất may mặc.
             </li>
             <li>
-              Động cơ servo tiết kiệm năng lượng: Máy trang bị động cơ servo
-              tiết kiệm năng lượng, giúp giảm lượng điện tiêu thụ và mang lại
-              hiệu suất cao hơn.
+              Động cơ servo tiết kiệm năng lượng: Máy trang bị động cơ servo tiết kiệm năng lượng, giúp giảm
+              lượng điện tiêu thụ và mang lại hiệu suất cao hơn.
             </li>
             <li>
-              Đèn LED: Máy được trang bị đèn LED chiếu sáng chính xác, giúp làm
-              việc dễ dàng và tiện lợi trong môi trường ánh sáng tốt.
+              Đèn LED: Máy được trang bị đèn LED chiếu sáng chính xác, giúp làm việc dễ dàng và tiện lợi trong
+              môi trường ánh sáng tốt.
             </li>
             <li>
-              Công tắc cảm ứng: Máy được trang bị công tắc cảm ứng có chức năng
-              cao, giúp ngăn ngừa gãy kim và đảm bảo an toàn trong quá trình
-              may.
+              Công tắc cảm ứng: Máy được trang bị công tắc cảm ứng có chức năng cao, giúp ngăn ngừa gãy kim và
+              đảm bảo an toàn trong quá trình may.
             </li>
           </ul>
         </div>
       </div>
-      <div className='mt-6'>
+      <div id='luu-y' className='mt-6'>
         <div className='h3-bold text-text-1'>
-          <span>
-            Những lưu ý khi sử dụng máy may 1 kim điện tử Juki DDL 7000A-7
-          </span>
+          <span>Những lưu ý khi sử dụng máy may 1 kim điện tử Juki DDL 7000A-7</span>
         </div>
         <div className='mt-2'>
           <p>
-            <strong>Máy may 1 kim điện tử Juki DDL 7000A-7</strong> là một máy
-            may công nghiệp chất lượng cao được sản xuất bởi Juki, một trong
-            những thương hiệu nổi tiếng Nhật Bản và là hàng đầu trong lĩnh vực
-            máy may công nghiệp. Đây là một máy may được thiết kế để đáp ứng nhu
-            cầu may mặc chuyên nghiệp, từ các xưởng may đến các nhà máy sản xuất
-            hàng may mặc lớn.
+            <strong>Máy may 1 kim điện tử Juki DDL 7000A-7</strong> là một máy may công nghiệp chất lượng cao
+            được sản xuất bởi Juki, một trong những thương hiệu nổi tiếng Nhật Bản và là hàng đầu trong lĩnh
+            vực máy may công nghiệp. Đây là một máy may được thiết kế để đáp ứng nhu cầu may mặc chuyên
+            nghiệp, từ các xưởng may đến các nhà máy sản xuất hàng may mặc lớn.
           </p>
           <p className='my-3'>
-            <strong>
-              Một số đặc trưng cơ bản của máy may 1 kim điện tử Juki DDL
-              7000A-7:
-            </strong>
+            <strong>Một số đặc trưng cơ bản của máy may 1 kim điện tử Juki DDL 7000A-7:</strong>
           </p>
           <ul className='list-disc ms-5'>
             <li>
-              Hệ thống truyền động trực tiếp: Máy được trang bị hệ thống truyền
-              động trực tiếp, giúp tăng tính chính xác và hiệu suất của máy.
+              Hệ thống truyền động trực tiếp: Máy được trang bị hệ thống truyền động trực tiếp, giúp tăng tính
+              chính xác và hiệu suất của máy.
             </li>
             <li>
-              Kích thước nhỏ gọn: Cả hộp điều khiển và bảng điều khiển được tích
-              hợp vào đầu máy, giúp tiết kiệm không gian và dễ dàng trong việc
-              vận hành.
+              Kích thước nhỏ gọn: Cả hộp điều khiển và bảng điều khiển được tích hợp vào đầu máy, giúp tiết
+              kiệm không gian và dễ dàng trong việc vận hành.
             </li>
             <li>
-              Khả năng may đa dạng vật liệu: Máy có khả năng làm việc với nhiều
-              loại vật liệu khác nhau, đáp ứng các yêu cầu đa dạng của sản xuất
-              may mặc.
+              Khả năng may đa dạng vật liệu: Máy có khả năng làm việc với nhiều loại vật liệu khác nhau, đáp
+              ứng các yêu cầu đa dạng của sản xuất may mặc.
             </li>
             <li>
-              Động cơ servo tiết kiệm năng lượng: Máy trang bị động cơ servo
-              tiết kiệm năng lượng, giúp giảm lượng điện tiêu thụ và mang lại
-              hiệu suất cao hơn.
+              Động cơ servo tiết kiệm năng lượng: Máy trang bị động cơ servo tiết kiệm năng lượng, giúp giảm
+              lượng điện tiêu thụ và mang lại hiệu suất cao hơn.
             </li>
             <li>
-              Đèn LED: Máy được trang bị đèn LED chiếu sáng chính xác, giúp làm
-              việc dễ dàng và tiện lợi trong môi trường ánh sáng tốt.
+              Đèn LED: Máy được trang bị đèn LED chiếu sáng chính xác, giúp làm việc dễ dàng và tiện lợi trong
+              môi trường ánh sáng tốt.
             </li>
             <li>
-              Công tắc cảm ứng: Máy được trang bị công tắc cảm ứng có chức năng
-              cao, giúp ngăn ngừa gãy kim và đảm bảo an toàn trong quá trình
-              may.
+              Công tắc cảm ứng: Máy được trang bị công tắc cảm ứng có chức năng cao, giúp ngăn ngừa gãy kim và
+              đảm bảo an toàn trong quá trình may.
             </li>
           </ul>
         </div>
