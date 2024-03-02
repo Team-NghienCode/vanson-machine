@@ -4,7 +4,6 @@ import './globals.css';
 
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { useEffect, useRef } from 'react';
 
 const font = Inter({ subsets: ['vietnamese'] });
 
@@ -21,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <head>
-        <script src='/js/jquery.min.js' async />
-        <script src='/js/jquery.easing.min.js' async />
-        <script src='/js/scripts.js' async />
+        <script src='/js/jquery.min.js' defer />
+        <script src='/js/jquery.easing.min.js' defer />
+        <script src='/js/scripts.js' defer />
       </head>
 
       <body className={font.className} data-spy='scroll' data-target='.fixed-top'>
