@@ -4,7 +4,6 @@ import './globals.css';
 
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { useEffect, useRef } from 'react';
 
 const font = Inter({ subsets: ['vietnamese'] });
 
