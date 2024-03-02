@@ -1,3 +1,21 @@
+import Link from "next/link";
+
+const Items = [
+    {
+        id: 1,
+        name: 'Máy May 1 Kim Điện Tử Juki DDL 7000A-7',
+        price: 81500000,
+        sale_price: 84500000,
+        image: '/uploads/2023/08/img20220306210105-6149-300x225.jpg',
+    },
+    {
+        id: 2,
+        name: 'Máy May 1 Kim Điện Tử',
+        price: 81500000,
+        sale_price: 84500000,
+        image: '/uploads/2023/08/ke430hx-4684-300x225.png',
+    },
+];
 
 export default function ListItems({ params }: { params: { machine_name: string } }) {
 
@@ -13,7 +31,8 @@ export default function ListItems({ params }: { params: { machine_name: string }
 
             {/* <!-- end of ex-header --> */}
             <div className='ex-basic-1'>
-                <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
+                    <Link className="menu" href='/'>Trang chủ</Link>
                     <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                         <div className="group relative p-4 bg-gray rounded-md">
                             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-400 lg:aspect-none group-hover:opacity-75 lg:h-80">
