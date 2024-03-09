@@ -1,11 +1,10 @@
 import * as React from 'react';
 
 export interface IProductItemV2Props {
-    id: number;
     title: string;
     price: number;
-    priceSale: number;
-    sale: boolean;
+    priceSale?: number;
+    sale?: boolean;
     image: string;
 }
 
@@ -30,7 +29,7 @@ export default function ProductItemV2(props: IProductItemV2Props) {
                     </h3>
                     <div className="grid grid-cols-2 gap-2">
                         {props.sale && (
-                            <p className="text-md font-medium text-red-600 line-through">{props.priceSale.toLocaleString('de-DE')} ₫</p>)}
+                            <p className="text-md font-medium text-red-600 line-through">{props.priceSale!.toLocaleString('de-DE')} ₫</p>)}
                         <p className="text-md font-bold text-red-600">{props.price.toLocaleString('de-DE')} ₫</p>
                     </div>
                 </div>

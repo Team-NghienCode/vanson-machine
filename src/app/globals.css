@@ -112,6 +112,7 @@ Colors:
   * {
     @apply m-0 p-0 box-border scroll-smooth;
   }
+
   body {
     @apply font-inter text-text-2 text-[14px];
   }
@@ -183,6 +184,7 @@ Colors:
 }
 
 @layer utilities {
+
   /* Text */
   .h1-bold {
     @apply text-[36px] font-bold leading-[140%];
@@ -329,6 +331,7 @@ Colors:
   .custom-scrollbar-fg::-webkit-scrollbar-thumb:hover {
     background: var(--background1);
   }
+
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
@@ -384,7 +387,8 @@ Colors:
   .btn-solid-reg:hover {
     border: 1px solid #594cda;
     background-color: transparent;
-    color: #594cda; /* needs to stay here because of the color property of a tag */
+    color: #594cda;
+    /* needs to stay here because of the color property of a tag */
     text-decoration: none;
   }
 
@@ -408,7 +412,8 @@ Colors:
   .btn-solid-lg:hover {
     border: 1px solid #594cda;
     background-color: transparent;
-    color: #594cda; /* needs to stay here because of the color property of a tag */
+    color: #594cda;
+    /* needs to stay here because of the color property of a tag */
     text-decoration: none;
   }
 
@@ -431,7 +436,8 @@ Colors:
   .btn-solid-lg.secondary:hover {
     border: 1px solid #eb427e;
     background: transparent;
-    color: #eb427e; /* needs to stay here because of the color property of a tag */
+    color: #eb427e;
+    /* needs to stay here because of the color property of a tag */
   }
 
   .btn-outline-reg {
@@ -544,7 +550,8 @@ Colors:
 
   .offcanvas-collapse {
     position: fixed;
-    top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+    top: 3.25rem;
+    /* adjusts the height between the top of the page and the offcanvas menu */
     bottom: 0;
     left: 100%;
     width: 100%;
@@ -593,7 +600,7 @@ Colors:
     margin-left: 0;
   }
 
-  .dropdown.show > a,
+  .dropdown.show>a,
   .nav-link:hover,
   .nav-link.active {
     color: #ff6e84;
@@ -614,7 +621,8 @@ Colors:
     background-color: #f1f9fc;
     background-clip: padding-box;
     border-radius: 0.25rem;
-    animation: fadeDropdown 0.2s; /* required for the fade animation */
+    animation: fadeDropdown 0.2s;
+    /* required for the fade animation */
   }
 
   @keyframes fadeDropdown {
@@ -662,6 +670,7 @@ Colors:
     margin: 0.5rem auto 0.5rem auto;
     background-color: #d4dce2;
   }
+
   /* end of dropdown menu */
 
   /*****************/
@@ -982,6 +991,7 @@ Colors:
     -ms-transform: rotate(45deg) translate3d(0, 0, 0);
     transform: rotate(45deg) translate3d(0, 0, 0);
   }
+
   /* end of best value label */
 
   /**********************/
@@ -1069,8 +1079,8 @@ Colors:
   /*     Extra Pages     */
   /***********************/
   .ex-header {
-    padding-top: 8.5rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: #f1f9fc;
   }
 
@@ -1110,12 +1120,15 @@ Colors:
 
   /* Min-width 768px */
   @media (min-width: 768px) {
+
     /* Extra Pages */
     .ex-basic-1 .text-box {
       padding: 1.75rem 2rem 0.875rem 2rem;
     }
+
     /* end of extra pages */
   }
+
   /* end of min-width 768px */
 
   /* Min-width 1024px */
@@ -1203,6 +1216,7 @@ Colors:
     .counter {
       padding-top: 5rem;
     }
+
     /* end of statistics */
 
     /* Pricing */
@@ -1217,12 +1231,14 @@ Colors:
       margin-right: 0.375rem;
       margin-left: 0.375rem;
     }
+
     /* end of pricing */
 
     /* Conclusion */
     .basic-5 {
       text-align: left;
     }
+
     /* end of conclusion */
 
     /* Copyright */
@@ -1238,6 +1254,7 @@ Colors:
     .copyright .statement {
       text-align: right;
     }
+
     /* end of copyright */
 
     /* Extra Pages */
@@ -1251,12 +1268,15 @@ Colors:
       margin-right: 1rem;
       margin-left: 1rem;
     }
+
     /* end of extra pages */
   }
+
   /* end of min-width 1024px */
 
   /* Min-width 1280px */
   @media (min-width: 1280px) {
+
     /* General Styles */
     .h1-large {
       font-size: 3.125rem;
@@ -1266,6 +1286,7 @@ Colors:
     .container {
       max-width: 72rem;
     }
+
     /* end of general styles */
 
     /* Features */
@@ -1289,6 +1310,7 @@ Colors:
       font-size: 3.75rem;
       line-height: 4.25rem;
     }
+
     /* end of statistics */
 
     /* Pricing */
@@ -1305,6 +1327,7 @@ Colors:
       padding-right: 2.25rem;
       padding-left: 2.25rem;
     }
+
     /* end of pricing */
 
     /* Extra Pages */
@@ -1316,7 +1339,9 @@ Colors:
       margin-right: 2.875rem;
       margin-left: 2.875rem;
     }
+
     /* end of extra pages */
   }
+
   /* end of min-width 1200px */
 }

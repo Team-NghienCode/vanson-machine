@@ -33,7 +33,7 @@ const TopSanPham = ({ label }: ITopSanPham) => {
             {data.map((item) => {
               return (
                 <Link
-                  href={'/product/' + item.title.split(' ').join('-')}
+                  href={'/san-pham/' + item.title.split(' ').join('-')}
                   key={item.title}
                   className='card cursor-pointer group'>
                   {item.sale && (

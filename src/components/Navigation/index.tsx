@@ -130,7 +130,7 @@ const Navigation = () => {
                         key={item.id}
                         className='dropdown-item'
                         onClick={() => setIsOpen(!isOpen)}
-                        href={`/san-pham/${item.slug}`}>
+                        href={`/danh-muc/${item.slug}`}>
                         {item.title}
                       </Link>
                       {index < danhMuc.length - 1 && <div className='dropdown-divider' key={index}></div>}
