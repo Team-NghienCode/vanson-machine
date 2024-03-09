@@ -19,6 +19,7 @@ const data = [
     price: 1350000,
     sale: true,
     priceSale: 1200000
+    
   },
   {
     image: '/images/top4.jpg',

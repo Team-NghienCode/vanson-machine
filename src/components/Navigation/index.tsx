@@ -9,6 +9,7 @@ import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import { cn } from '@/lib/utils';
+import { danhMuc } from '@/data/danhmucsanpham';
 
 const Navigation = () => {
   const pathname = usePathname();
@@ -123,17 +124,18 @@ const Navigation = () => {
                   Danh mục sản phẩm
                 </Link>
                 <div className='dropdown-menu' aria-labelledby='dropdown01'>
-                  <Link className='dropdown-item' onClick={() => setIsOpen(!isOpen)} href='/article'>
-                    Sản phẩm 1
-                  </Link>
-                  <div className='dropdown-divider'></div>
-                  <Link className='dropdown-item' onClick={() => setIsOpen(!isOpen)} href='/terms'>
-                    Sản phẩm 2
-                  </Link>
-                  <div className='dropdown-divider'></div>
-                  <Link className='dropdown-item' onClick={() => setIsOpen(!isOpen)} href='/privacy'>
-                    Sản phẩm 3
-                  </Link>
+                  {danhMuc.map((item, index) => (
+                    <>
+                      <Link
+                        key={item.id}
+                        className='dropdown-item'
+                        onClick={() => setIsOpen(!isOpen)}
+                        href={`/san-pham/${item.slug}`}>
+                        {item.title}
+                      </Link>
+                      {index < danhMuc.length - 1 && <div className='dropdown-divider' key={index}></div>}
+                    </>
+                  ))}
                 </div>
               </li>
               <li className='dropdown'>
