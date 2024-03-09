@@ -1,8 +1,9 @@
 import Link from 'next/link';
 
-import data from '@/data/topbanchay';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+
+import data from '@/data/topbanchay';
 
 interface ITopSanPham {
   label: string;
@@ -29,50 +30,55 @@ const TopSanPham = ({ label }: ITopSanPham) => {
             alt='alternative'
             className='mb-4 h-full lg:max-w-[33%] lg:mr-4 '
           />
-          <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3'>
-            {data.map((item) => {
-              return (
-                <Link
-                  href={'/san-pham/' + item.title.split(' ').join('-')}
-                  key={item.title}
-                  className='card cursor-pointer group'>
-                  {item.sale && (
-                    <div className='badge-container absolute left-0 top-0 z-[21]'>
-                      <div className='callout badge badge-square'>
-                        <div className='badge-inner secondary on-sale'>
-                          <span className='onsale'>Giảm giá</span>
+          <div>
+            <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3'>
+              {data.map((item) => {
+                return (
+                  <Link
+                    href={'/san-pham/' + item.title.split(' ').join('-')}
+                    key={item.title}
+                    className='card cursor-pointer group'>
+                    {item.sale && (
+                      <div className='badge-container absolute left-0 top-0 z-[21]'>
+                        <div className='callout badge badge-square'>
+                          <div className='badge-inner secondary on-sale'>
+                            <span className='onsale'>Giảm giá</span>
+                          </div>
                         </div>
                       </div>
+                    )}
+                    <div className='card-image'>
+                      <img src={item.image} alt='alternative' />
                     </div>
-                  )}
-                  <div className='card-image'>
-                    <img src={item.image} alt='alternative' />
-                  </div>
-                  <div className='card-body'>
-                    <h5 className='card-title group-hover:underline'>{item.title}</h5>
-                    <p className='mb-4 text-red-600 font-bold'>
-                      {item.sale ? (
-                        <>
-                          <del className='text-red-800'>{item.price.toLocaleString('de-DE')} ₫</del> &nbsp;
-                          {item.priceSale.toLocaleString('de-DE')} ₫
-                        </>
-                      ) : (
-                        item.price.toLocaleString('de-DE') + ' ₫'
-                      )}
-                    </p>
-                  </div>
-                </Link>
-              );
-            })}
+                    <div className='card-body'>
+                      <h5 className='card-title group-hover:underline'>{item.title}</h5>
+                      <p className='mb-4 text-red-600 font-bold'>
+                        {item.sale ? (
+                          <>
+                            <del className='text-red-800'>{item.price.toLocaleString('de-DE')} ₫</del> &nbsp;
+                            {item.priceSale.toLocaleString('de-DE')} ₫
+                          </>
+                        ) : (
+                          item.price.toLocaleString('de-DE') + ' ₫'
+                        )}
+                      </p>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+            <div
+              className='-mt-8 mb-2 bg-red-600 text-white border border-solid p-1
+              border-transparent cursor-pointer flex max-w-fit items-center
+              font-bold min-h-5 relative text-center uppercase justify-center'
+              style={{ borderRadius: '10px' }}>
+              <span className='inline-block pl-1'>Xem thêm</span>
+              <FontAwesomeIcon
+                icon={faArrowCircleRight}
+                className='inline-block transform-none p-0 ml-1 mr-1'
+              />
+            </div>
           </div>
-        </div>
-        <div
-          className='-mt-8 mb-2 bg-red-600 text-white border border-solid p-1
-          border-transparent cursor-pointer flex max-w-fit items-center
-          font-bold min-h-5 relative text-center uppercase justify-center'
-          style={{ borderRadius: '10px' }}>
-          <span className='inline-block pl-1'>Xem thêm</span>
-          <FontAwesomeIcon icon={faArrowCircleRight} className='inline-block transform-none p-0 ml-1 mr-1' />
         </div>
       </div>
     </div>

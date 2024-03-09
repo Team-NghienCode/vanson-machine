@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Tooltip } from '@mui/material';
@@ -18,6 +19,14 @@ const Navigation = () => {
 
   const navRef = useRef<HTMLElement | null>(null);
   const topRef = useRef<HTMLDivElement | null>(null);
+
+  const isMobile = useMediaQuery({ query: '(max-width: 1024px)' });
+
+  const handleOpen = useCallback(() => {
+    if (isMobile) {
+      setIsOpen(!isOpen);
+    }
+  }, [isMobile, isOpen]);
 
   useEffect(() => {
     const nav = navRef.current;
@@ -86,7 +95,7 @@ const Navigation = () => {
           <button
             className='bg-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400'
             type='button'
-            onClick={() => setIsOpen(!isOpen)}>
+            onClick={handleOpen}>
             <span className='navbar-toggler-icon inline-block w-8 h-8 align-middle'></span>
           </button>
 
@@ -97,10 +106,7 @@ const Navigation = () => {
             )}>
             <ul className='pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row'>
               <li>
-                <Link
-                  className={`nav-link ${pathname === '/' && 'active'}`}
-                  href='/'
-                  onClick={() => setIsOpen(!isOpen)}>
+                <Link className={`nav-link ${pathname === '/' && 'active'}`} href='/' onClick={handleOpen}>
                   Trang chủ <span className='sr-only'>(current)</span>
                 </Link>
               </li>
@@ -108,7 +114,7 @@ const Navigation = () => {
                 <Link
                   className={`nav-link ${pathname === '/gioi-thieu' && 'active'}`}
                   href='/gioi-thieu'
-                  onClick={() => setIsOpen(!isOpen)}>
+                  onClick={handleOpen}>
                   Giới thiệu
                 </Link>
               </li>
@@ -125,16 +131,12 @@ const Navigation = () => {
                 </Link>
                 <div className='dropdown-menu' aria-labelledby='dropdown01'>
                   {danhMuc.map((item, index) => (
-                    <>
-                      <Link
-                        key={item.id}
-                        className='dropdown-item'
-                        onClick={() => setIsOpen(!isOpen)}
-                        href={`/danh-muc/${item.slug}`}>
+                    <div key={item.id}>
+                      <Link className='dropdown-item' onClick={handleOpen} href={`/danh-muc/${item.slug}`}>
                         {item.title}
                       </Link>
-                      {index < danhMuc.length - 1 && <div className='dropdown-divider' key={index}></div>}
-                    </>
+                      {index < danhMuc.length - 1 && <div className='dropdown-divider'></div>}
+                    </div>
                   ))}
                 </div>
               </li>
@@ -150,15 +152,15 @@ const Navigation = () => {
                   Dịch vụ
                 </Link>
                 <div className='dropdown-menu' aria-labelledby='dropdown02'>
-                  <Link className='dropdown-item' onClick={() => setIsOpen(!isOpen)} href='/article'>
+                  <Link className='dropdown-item' onClick={handleOpen} href='/article'>
                     Sửa chữa
                   </Link>
                   <div className='dropdown-divider'></div>
-                  <Link className='dropdown-item' onClick={() => setIsOpen(!isOpen)} href='/terms'>
+                  <Link className='dropdown-item' onClick={handleOpen} href='/terms'>
                     Bảo hành
                   </Link>
                   <div className='dropdown-divider'></div>
-                  <Link className='dropdown-item' onClick={() => setIsOpen(!isOpen)} href='/privacy'>
+                  <Link className='dropdown-item' onClick={handleOpen} href='/privacy'>
                     Bảo trì
                   </Link>
                 </div>
