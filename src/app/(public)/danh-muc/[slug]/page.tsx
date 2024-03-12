@@ -34,7 +34,6 @@ export default function ListItems({ params }: { params: { slug: string } }) {
                 </div>
                 {/* <!-- end of container --> */}
             </header>
-
             {/* <!-- end of ex-header --> */}
             <div className='ex-basic-1'>
                 <div className="mx-auto max-w-2xl px-4 sm:px-8 sm:py-12 lg:max-w-7xl lg:px-8">
