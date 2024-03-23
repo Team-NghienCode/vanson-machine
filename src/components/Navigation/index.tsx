@@ -102,7 +102,7 @@ const Navigation = () => {
             )}>
             <ul
               className='pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row'
-              data-uk-nav='multiple: true'>
+              data-uk-nav>
               <li>
                 <Link className={`nav-link ${pathname === '/' && 'active'}`} href='/' onClick={handleOpen}>
                   Trang chủ <span className='sr-only'>(current)</span>
