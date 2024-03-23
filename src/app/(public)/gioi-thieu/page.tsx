@@ -2,7 +2,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
 
 export default function ArticlePage() {
   return (
@@ -31,7 +30,7 @@ export default function ArticlePage() {
       <div className='ex-basic-1 pt-4'>
         <div className='container px-4 sm:px-8 xl:px-32'>
           <p className='mb-4'>
-            Công ty tnhh thương mại dịch vụ xuất nhập khẩu điện máy tổng hợp miền Nam chuyên nhập khẩu và phân
+            Công ty TNHH thương mại dịch vụ xuất nhập khẩu điện máy tổng hợp miền Nam chuyên nhập khẩu và phân
             phối máy ngành may mặc và thiết bị trên toàn quốc. Với hơn 10 năm hoạt động trên lĩnh vực nhập
             khẩu và phân phối máy ngành may mặc. Điện máy tổng hợp miền Nam là một trong số ít công ty được
             đánh giá cao về cả chất lượng và dịch vụ.

@@ -11,6 +11,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import { cn } from '@/lib/utils';
 import { danhMuc } from '@/data/danhmucsanpham';
+import { IoChevronDown } from 'react-icons/io5';
 
 const Navigation = () => {
   const pathname = usePathname();
@@ -34,21 +35,16 @@ const Navigation = () => {
 
     const handleScrollTop = () => {
       if (backToTop) {
-        const hideBackToTop = setTimeout(() => {
-          backToTop.style.display = 'none';
-        }, 500);
-
         if (document.documentElement.scrollTop > 700) {
           // fade in 500ms
           backToTop.style.display = 'block';
           backToTop.style.transition = 'opacity 500ms';
           backToTop.style.opacity = '1';
-          clearTimeout(hideBackToTop);
         } else {
           // fade out 500ms
           backToTop.style.transition = 'opacity 500ms';
           backToTop.style.opacity = '0';
-          hideBackToTop;
+          backToTop.style.display = 'none';
         }
       }
     };
@@ -104,7 +100,9 @@ const Navigation = () => {
               'navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center',
               isOpen && 'open'
             )}>
-            <ul className='pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row'>
+            <ul
+              className='pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row'
+              data-uk-nav='multiple: true'>
               <li>
                 <Link className={`nav-link ${pathname === '/' && 'active'}`} href='/' onClick={handleOpen}>
                   Trang chủ <span className='sr-only'>(current)</span>
@@ -118,52 +116,94 @@ const Navigation = () => {
                   Giới thiệu
                 </Link>
               </li>
-              <li className='dropdown'>
-                <Link
-                  className='nav-link dropdown-toggle'
-                  href='#'
-                  onClick={(e) => e.preventDefault()}
-                  id='dropdown01'
-                  data-toggle='dropdown'
-                  aria-haspopup='true'
-                  aria-expanded='false'>
+              <li className='dropdown max-lg:hidden'>
+                <button className='!flex nav-link group'>
                   Danh mục sản phẩm
-                </Link>
-                <div className='dropdown-menu' aria-labelledby='dropdown01'>
-                  {danhMuc.map((item, index) => (
-                    <div key={item.id}>
-                      <Link className='dropdown-item' onClick={handleOpen} href={`/danh-muc/${item.slug}`}>
-                        {item.title}
-                      </Link>
-                      {index < danhMuc.length - 1 && <div className='dropdown-divider'></div>}
-                    </div>
-                  ))}
+                  <IoChevronDown className='text-base ml-2 duration-200 group-aria-expanded:rotate-180' />
+                </button>
+                <div
+                  className='dropdown-menu hidden !w-[250px]'
+                  data-uk-dropdown='pos: bottom-left; offset:5; animation: uk-animation-slide-bottom-small; animate-out: true'>
+                  <nav>
+                    {danhMuc.map((item, index) => (
+                      <div key={item.id}>
+                        <Link className='dropdown-item' onClick={handleOpen} href={`/danh-muc/${item.slug}`}>
+                          {item.title}
+                        </Link>
+                        {index < danhMuc.length - 1 && <div className='dropdown-divider'></div>}
+                      </div>
+                    ))}
+                  </nav>
                 </div>
               </li>
-              <li className='dropdown'>
-                <Link
-                  className='nav-link dropdown-toggle'
-                  href='#'
-                  onClick={(e) => e.preventDefault()}
-                  id='dropdown02'
-                  data-toggle='dropdown'
-                  aria-haspopup='true'
-                  aria-expanded='false'>
-                  Dịch vụ
+              <li className='uk-parent lg:hidden'>
+                <Link href='#' className='!flex justify-start items-center nav-link group'>
+                  <span>Danh mục sản phẩm</span>
+                  <IoChevronDown className='text-base ml-2 duration-200 group-aria-expanded:rotate-180' />
                 </Link>
-                <div className='dropdown-menu' aria-labelledby='dropdown02'>
-                  <Link className='dropdown-item' onClick={handleOpen} href='/article'>
-                    Sửa chữa
-                  </Link>
-                  <div className='dropdown-divider'></div>
-                  <Link className='dropdown-item' onClick={handleOpen} href='/terms'>
-                    Bảo hành
-                  </Link>
-                  <div className='dropdown-divider'></div>
-                  <Link className='dropdown-item' onClick={handleOpen} href='/privacy'>
-                    Bảo trì
-                  </Link>
+                <ul className='pl-5 my-1 space-y-0 text-sm'>
+                  {danhMuc.map((item) => (
+                    <li key={item.id}>
+                      <Link className='nav-link' onClick={handleOpen} href={`/danh-muc/${item.slug}`}>
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+              <li className='dropdown max-lg:hidden'>
+                <button className='!flex nav-link group'>
+                  Dịch vụ
+                  <IoChevronDown className='text-base ml-2 duration-200 group-aria-expanded:rotate-180' />
+                </button>
+                <div
+                  className='dropdown-menu hidden !w-[150px]'
+                  data-uk-dropdown='pos: bottom-left; offset:5; animation: uk-animation-slide-bottom-small; animate-out: true'>
+                  <nav>
+                    <Link className='dropdown-item' onClick={handleOpen} href='/article'>
+                      Sửa chữa
+                    </Link>
+                    <div className='dropdown-divider'></div>
+                    <Link className='dropdown-item' onClick={handleOpen} href='/terms'>
+                      Bảo hành
+                    </Link>
+                    <div className='dropdown-divider'></div>
+                    <Link className='dropdown-item' onClick={handleOpen} href='/privacy'>
+                      Bảo trì
+                    </Link>
+                  </nav>
                 </div>
+              </li>
+              <li className='uk-parent lg:hidden'>
+                <Link href='#' className='!flex justify-start items-center nav-link group'>
+                  <span>Dịch vụ</span>
+                  <IoChevronDown className='text-base ml-2 duration-200 group-aria-expanded:rotate-180' />
+                </Link>
+                <ul className='pl-5 my-1 space-y-0 text-sm'>
+                  <li>
+                    <Link className='nav-link' onClick={handleOpen} href='/article'>
+                      Sửa chữa
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className='nav-link' onClick={handleOpen} href='/terms'>
+                      Bảo hành
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className='nav-link' onClick={handleOpen} href='/privacy'>
+                      Bảo trì
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <Link
+                  className={`nav-link ${pathname === '/lien-he' && 'active'}`}
+                  href='/lien-he'
+                  onClick={handleOpen}>
+                  Liên hệ
+                </Link>
               </li>
             </ul>
             <div className='flex gap-2 lg:ml-3.5'>
