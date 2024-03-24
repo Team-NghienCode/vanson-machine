@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function LienHePage() {
   return (
-    <section className='py-8 px-8 xl:px-32 flex items-center relative flex-nowrap flex-row min-h-[auto]'>
-      <div className='relative'>
+    <section className='py-8 px-2 xl:px-32 flex items-center relative flex-nowrap flex-row min-h-[auto]'>
+      <div className='relative w-full'>
         <div className='flex flex-wrap w-full flex-row'>
           <div className='flex px-4 pb-8 relative w-full max-w-full basis-full'>
             <div className='bg-[50%_50%] bg-no-repeat bg-cover flex-[1_0_auto] relative w-full'>
@@ -122,7 +122,7 @@ export default function LienHePage() {
                   <li>
                     <FontAwesomeIcon icon={faCircle} className='text-xs mr-2' />
                     Website:&nbsp;
-                    <a href=''>https://dienmaytonghopmiennam.com/</a>
+                    <a href=''>https://vanson.com/</a>
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faCircle} className='text-xs mr-2' />
